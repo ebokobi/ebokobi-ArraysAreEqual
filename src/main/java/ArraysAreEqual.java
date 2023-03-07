@@ -1,4 +1,5 @@
 import java.nio.file.FileSystemAlreadyExistsException;
+import java.util.*;
 
 //see test cases.
 public class ArraysAreEqual {
@@ -18,7 +19,7 @@ public class ArraysAreEqual {
      */
     public boolean equal(int[] a, int[] b){
         for(int i : a) {
-            if(i == b[i] && a.toString() == b.toString()) {
+            if(a.equals(b)) {
                 return true;
             }
         }
