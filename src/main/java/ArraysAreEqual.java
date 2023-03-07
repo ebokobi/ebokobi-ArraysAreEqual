@@ -15,8 +15,16 @@ public class ArraysAreEqual {
      * @return true if the values of a are equal to the values of b.
      */
     public boolean equal(int[] a, int[] b){
-        if(a.toString() == b.toString()) {
+        String astr = "";
+        String bstr = "";
+        for(int i : a ) {
+            astr += i;
+            for(int j : b) {
+                bstr += j;
+            }
+        if(astr.equalsIgnoreCase(bstr)) {
             return true;
+        }
         }
         return false;
     }
