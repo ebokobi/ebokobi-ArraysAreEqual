@@ -22,7 +22,7 @@ public class ArraysAreEqual {
             for(int j : b) {
                 bstr += j;
             }
-        if(astr.equalsIgnoreCase(bstr)) {
+        if(astr.matches(bstr)) {
             return true;
         }
         }
