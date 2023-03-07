@@ -1,3 +1,5 @@
+import java.nio.file.FileSystemAlreadyExistsException;
+
 //see test cases.
 public class ArraysAreEqual {
     /**
@@ -15,14 +17,13 @@ public class ArraysAreEqual {
      * @return true if the values of a are equal to the values of b.
      */
     public boolean equal(int[] a, int[] b){
-        String res = "";
-        for (int i : a) {
-            if(a[i] == b[i]) {
-                res += i;
+        for(int i : a) {
+            for (int j : b) {
+                if(i == j) {
+                    return true;
+                }
+                
             }
-        if(res.length() == a.length) {
-            return true;
-        }
         }
         return false;
     }
