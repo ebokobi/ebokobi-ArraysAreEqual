@@ -18,11 +18,8 @@ public class ArraysAreEqual {
      */
     public boolean equal(int[] a, int[] b){
         for(int i : a) {
-            for (int j : b) {
-                if(i == j) {
-                    return true;
-                }
-                
+            if(i == b[i]) {
+                return true;
             }
         }
         return false;
