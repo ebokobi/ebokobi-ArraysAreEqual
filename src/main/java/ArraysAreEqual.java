@@ -18,7 +18,7 @@ public class ArraysAreEqual {
      */
     public boolean equal(int[] a, int[] b){
         for(int i : a) {
-            if(i == b[i]) {
+            if(i == b[i] && a.toString() == b.toString()) {
                 return true;
             }
         }
